@@ -10,7 +10,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 10rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   -webkit-box-shadow: 0px 5px 10px gray;
           box-shadow: 0px 5px 10px gray;
 }
@@ -31,7 +31,6 @@
 }
 
 .SearchResult .content .info {
-  font: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +44,8 @@
   padding: 1rem;
 }
 
-.SearchResult .content .info h1 {
-  font-size: 2.3rem;
-}
-
-.SearchResult .content .info h2 {
-  font-size: 1.7rem;
+.SearchResult .content .info p {
+  font-size: 1.8rem;
 }
 
 .SearchResult button {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SearchList from "./SearchList";
 import logo from "../../logo.png";
 import "./style/search.css";
+import AppInfo from "../appInfo/AppInfo";
 const load = (a, b) => {
   if (a && b)
     fetch(
@@ -23,7 +24,7 @@ const load = (a, b) => {
         console.log(data);
       });
 };
-function Search() {
+function Search({ setAppId }) {
   const [rec, setRec] = useState(null);
   const [name, setName] = useState(null);
   useEffect(() => {
@@ -40,7 +41,7 @@ function Search() {
         ></input>
         <button onClick={() => load(setRec, name)}>Szukaj</button>
       </div>
-      <SearchList rec={rec}></SearchList>
+      <SearchList rec={rec} setAppId={setAppId}></SearchList>
     </div>
   );
 }

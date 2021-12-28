@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,oBAAoB;EACtC,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAIxB;;AAXD,AAQE,QARM,CAQN,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "infoApp.scss"
+    ],
+    "names": [],
+    "file": "infoApp.css"
+}
