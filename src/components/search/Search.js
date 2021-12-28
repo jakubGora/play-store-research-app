@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SearchList from "./SearchList";
+import logo from "../../logo.png";
+import "./style/search.css";
 const load = (a, b) => {
   if (a && b)
     fetch(
@@ -29,13 +31,14 @@ function Search() {
   });
   return (
     <div className="Search">
+      <img src={logo} />
       <div className="search-input">
         <input
           type="text"
           name="name"
           onChange={(e) => setName(e.target.value)}
         ></input>
-        <button onClick={() => load(setRec, name)}>asd</button>
+        <button onClick={() => load(setRec, name)}>Szukaj</button>
       </div>
       <SearchList rec={rec}></SearchList>
     </div>

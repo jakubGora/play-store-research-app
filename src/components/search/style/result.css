@@ -11,7 +11,8 @@
           align-items: center;
   height: 10rem;
   margin-bottom: 1rem;
-  background-color: #f0f0f0;
+  -webkit-box-shadow: 0px 5px 10px gray;
+          box-shadow: 0px 5px 10px gray;
 }
 
 .SearchResult .content {
