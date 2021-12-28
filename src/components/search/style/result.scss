@@ -1,0 +1,44 @@
+.SearchResult {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  margin-bottom: 1rem;
+  background-color: rgb(240, 240, 240);
+  .content {
+    display: flex;
+    flex-direction: row;
+    img {
+      border-radius: 1rem;
+      height: 100%;
+    }
+    .info {
+      font: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      h1 {
+        font-size: 2.3rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  button {
+    border-end-end-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border: none;
+    height: 100%;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: #689f38;
+    color: rgb(241, 241, 241);
+  }
+  button:hover {
+    background-color: #87d146;
+    cursor: pointer;
+  }
+}

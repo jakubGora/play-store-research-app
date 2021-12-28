@@ -1,0 +1,70 @@
+.SearchResult {
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10rem;
+  margin-bottom: 1rem;
+  background-color: #f0f0f0;
+}
+
+.SearchResult .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.SearchResult .content img {
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.SearchResult .content .info {
+  font: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.SearchResult .content .info h1 {
+  font-size: 2.3rem;
+}
+
+.SearchResult .content .info h2 {
+  font-size: 1.7rem;
+}
+
+.SearchResult button {
+  border-end-end-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border: none;
+  height: 100%;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: #689f38;
+  color: #f1f1f1;
+}
+
+.SearchResult button:hover {
+  background-color: #87d146;
+  cursor: pointer;
+}
+/*# sourceMappingURL=result.css.map */
