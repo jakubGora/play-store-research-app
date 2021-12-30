@@ -1,12 +1,92 @@
 .appInfo {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.575);
   display: flex;
   align-items: center;
   justify-content: center;
+
   .content {
-    padding: 5rem;
+    overflow-y: scroll;
+    margin: 5rem;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 90vh;
+    justify-content: space-between;
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      button.x {
+        border: none;
+        height: 5rem;
+        width: 5rem;
+        align-self: flex-end;
+        cursor: pointer;
+        img {
+          height: 5rem;
+          width: 5rem;
+        }
+        img:hover {
+          filter: opacity(50%);
+        }
+      }
+      button.buy {
+        font-size: 1.6rem;
+        border: none;
+        background-color: #689f38;
+        border-radius: 1rem;
+        padding: 2rem;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      button.buy:hover {
+        background-color: #83cf40;
+      }
+    }
+    .header {
+      display: flex;
+      max-width: calc(100% - 10rem);
+      img {
+        width: 20vmin;
+        height: 20vmin;
+      }
+      .heading {
+        padding-left: 3rem;
+
+        h1 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+
+        div {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    p.desc {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    .screens {
+      margin-top: 3rem;
+      display: flex;
+      overflow-x: scroll;
+
+      img {
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem;
+      }
+    }
   }
 }

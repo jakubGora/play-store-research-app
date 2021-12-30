@@ -35,4 +35,22 @@
       cursor: pointer;
     }
   }
+  .loader {
+    border: 10px solid #bdbdbd; /* Light grey */
+    border-top: 10px solid #94ff37; /* Blue */
+    border-radius: 50%;
+    width: 10vmin;
+    height: 10vmin;
+    margin-top: 5rem;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }

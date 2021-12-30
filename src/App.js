@@ -3,16 +3,12 @@ import Search from "./components/search/Search";
 import "./app.css";
 import AppInfo from "./components/appInfo/AppInfo";
 function App() {
-  const [appId, setAppId] = useState(null);
-
-  useEffect(() => {
-    console.log("asd");
-  }, appId);
-
+  const [app, setApp] = useState(null);
+  const [rec, setRec] = useState(null);
   return (
     <div className="App">
-      <AppInfo appId={appId} />
-      <Search setAppId={setAppId} />
+      <AppInfo setApp={setApp} app={app} />
+      <Search rec={rec} setRec={setRec} setApp={setApp} />
     </div>
   );
 }

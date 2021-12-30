@@ -1,7 +1,7 @@
 .appInfo {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.575);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,6 +15,120 @@
 }
 
 .appInfo .content {
-  padding: 5rem;
+  overflow-y: scroll;
+  margin: 5rem;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-height: 90vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appInfo .content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appInfo .content .buttons button.x {
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+}
+
+.appInfo .content .buttons button.x img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.appInfo .content .buttons button.x img:hover {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+.appInfo .content .buttons button.buy {
+  font-size: 1.6rem;
+  border: none;
+  background-color: #689f38;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.appInfo .content .buttons button.buy:hover {
+  background-color: #83cf40;
+}
+
+.appInfo .content .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: calc(100% - 10rem);
+}
+
+.appInfo .content .header img {
+  width: 20vmin;
+  height: 20vmin;
+}
+
+.appInfo .content .header .heading {
+  padding-left: 3rem;
+}
+
+.appInfo .content .header .heading h1 {
+  font-size: 4rem;
+}
+
+.appInfo .content .header .heading p {
+  font-size: 2rem;
+}
+
+.appInfo .content .header .heading div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appInfo .content p.desc {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.appInfo .content .screens {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.appInfo .content .screens img {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
 }
 /*# sourceMappingURL=infoApp.css.map */

@@ -3,16 +3,17 @@ import SearchList from "./SearchList";
 import logo from "../../logo.png";
 import "./style/search.css";
 import AppInfo from "../appInfo/AppInfo";
-const load = (a, b) => {
+const load = (a, b, c) => {
+  c(true);
   if (a && b)
     fetch(
-      "https://play-store2.p.rapidapi.com/search?q=" +
+      "https://app-stores.p.rapidapi.com/search?store=google&term=" +
         b +
-        "&country=pl&lang=pl",
+        "&language=pl",
       {
         method: "GET",
         headers: {
-          "x-rapidapi-host": "play-store2.p.rapidapi.com",
+          "x-rapidapi-host": "app-stores.p.rapidapi.com",
           "x-rapidapi-key":
             "23751b834cmsh7c2bed1e66012b8p117a95jsn54ce804c761e",
         },
@@ -20,16 +21,16 @@ const load = (a, b) => {
     )
       .then((response) => response.json())
       .then((data) => {
+        c(false);
         a(data);
         console.log(data);
       });
 };
-function Search({ setAppId }) {
-  const [rec, setRec] = useState(null);
+function Search({ setApp, rec, setRec }) {
+  const [loading, setLoading] = useState(false);
+
   const [name, setName] = useState(null);
-  useEffect(() => {
-    if (!rec) load(setRec);
-  });
+
   return (
     <div className="Search">
       <img src={logo} />
@@ -39,9 +40,11 @@ function Search({ setAppId }) {
           name="name"
           onChange={(e) => setName(e.target.value)}
         ></input>
-        <button onClick={() => load(setRec, name)}>Szukaj</button>
+        <button onClick={() => load(setRec, name, setLoading)}>Szukaj</button>
       </div>
-      <SearchList rec={rec} setAppId={setAppId}></SearchList>
+      {loading ? <div className="loader"></div> : ""}
+
+      {!loading ? <SearchList rec={rec} setApp={setApp}></SearchList> : ""}
     </div>
   );
 }
