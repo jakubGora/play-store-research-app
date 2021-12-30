@@ -14,6 +14,7 @@ const moreLess = (e, app, more, setMore) => {
 function AppInfo({ setApp, app }) {
   const [revs, setRevs] = useState();
   const [more, setMore] = useState(false);
+  const [revsAmount, setRevsAmount] = useState(5);
   useEffect(() => {
     if (app)
       fetch(
@@ -58,7 +59,13 @@ function AppInfo({ setApp, app }) {
           </div>
         </div>
         <div className="buttons">
-          <button className="x" onClick={() => setApp(null)}>
+          <button
+            className="x"
+            onClick={() => {
+              setApp(null);
+              setRevsAmount(5);
+            }}
+          >
             <img src="https://image.flaticon.com/icons/png/512/992/992660.png" />
           </button>
           <button className="buy">
@@ -89,26 +96,40 @@ function AppInfo({ setApp, app }) {
         <div className="rev">
           <h1>Opinie</h1>
           {revs ? (
-            revs.map((e) => (
-              <div className="review">
-                <div className="centerRev">
-                  <img src={e.author.image} alt="img" />
-                  <h3>{e.rating}/5</h3>
-                </div>
+            revs.map((e, i) =>
+              i < revsAmount ? (
+                <div className="review">
+                  <div className="centerRev">
+                    <img src={e.author.image} alt="img" />
+                    <h3>{e.rating}/5</h3>
+                  </div>
 
-                <div>
-                  <h1>{e.author.name}</h1>
-                  <h2>{e.date.substring(0, 10)}</h2>
+                  <div>
+                    <h1>{e.author.name}</h1>
+                    <h2>{e.date.substring(0, 10)}</h2>
 
-                  <p>{e.content.body}</p>
+                    <p>{e.content.body}</p>
+                  </div>
                 </div>
-              </div>
-            ))
+              ) : (
+                ""
+              )
+            )
           ) : (
             <p>Brak</p>
           )}
           ;
         </div>
+        {revs ? (
+          <button
+            className="revs"
+            onClick={(e) => setRevsAmount(revsAmount + 5)}
+          >
+            WIĘCEIJ OPINI
+          </button>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   ) : (
