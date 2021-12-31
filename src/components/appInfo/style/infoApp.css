@@ -242,4 +242,119 @@
   background-color: #3e5f22;
   color: white;
 }
+
+@media only screen and (max-width: 700px) {
+  .appInfo {
+    position: fixed;
+  }
+  .appInfo .content {
+    border-radius: 0rem;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    margin: 0;
+  }
+  .appInfo .content .buttons button.x {
+    border: none;
+    height: 5rem;
+    width: 5rem;
+  }
+  .appInfo .content .buttons button.x img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .appInfo .content .buttons button.buy {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1.3rem;
+  }
+  .appInfo .content .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: calc(100% - 10rem);
+  }
+  .appInfo .content .header img {
+    width: 20vmin;
+    height: 20vmin;
+  }
+  .appInfo .content .header .heading {
+    padding-left: 1rem;
+  }
+  .appInfo .content .header .heading h1 {
+    font-size: 2.5rem;
+  }
+  .appInfo .content .header .heading p {
+    font-size: 1.7rem;
+  }
+  .appInfo .content .header .heading div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .appInfo .content .screens {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .appInfo .content .screens img {
+    width: 50%;
+    padding: 1rem;
+  }
+  .appInfo .content .rev {
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+  .appInfo .content .rev .review {
+    margin: 0rem;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .appInfo .content .rev .review .centerRev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .appInfo .content .rev .review .centerRev h3 {
+    font-size: 2rem;
+  }
+  .appInfo .content .rev .review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .appInfo .content .rev .review div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+  }
+  .appInfo .content .rev .review div h1 {
+    font-size: 2rem;
+  }
+  .appInfo .content .rev .review div h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .appInfo .content .rev .review div p {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=infoApp.css.map */

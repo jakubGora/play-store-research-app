@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SearchList from "./SearchList";
-import logo from "../../logo.png";
+
 import "./style/search.css";
 import AppInfo from "../appInfo/AppInfo";
 const load = (a, b, c) => {
@@ -15,7 +15,7 @@ const load = (a, b, c) => {
         headers: {
           "x-rapidapi-host": "app-stores.p.rapidapi.com",
           "x-rapidapi-key":
-            "23751b834cmsh7c2bed1e66012b8p117a95jsn54ce804c761e",
+            "e4231613cbmsh71953add4d5886cp14ee51jsn2b665e331106",
         },
       }
     )
@@ -33,7 +33,7 @@ function Search({ setApp, rec, setRec }) {
 
   return (
     <div className="Search">
-      <img src={logo} />
+      <img src="http://jakubgora.pl/play/static/media/logo.png" />
       <div className="search-input">
         <input
           type="text"

@@ -172,3 +172,110 @@
     }
   }
 }
+@media only screen and (max-width: 700px) {
+  .appInfo {
+    position: fixed;
+
+    .content {
+      border-radius: 0rem;
+      max-width: 100vw;
+      max-height: 100vh;
+      width: 100vw;
+      height: 100vh;
+      padding: 2rem;
+      margin: 0;
+      .buttons {
+        button.x {
+          border: none;
+          height: 5rem;
+          width: 5rem;
+
+          img {
+            height: 5rem;
+            width: 5rem;
+          }
+        }
+        button.buy {
+          font-size: 1.2rem;
+          margin-top: 2rem;
+          border-radius: 1rem;
+          padding: 1.3rem;
+        }
+      }
+      .header {
+        display: flex;
+        max-width: calc(100% - 10rem);
+        img {
+          width: 20vmin;
+          height: 20vmin;
+        }
+        .heading {
+          padding-left: 1rem;
+
+          h1 {
+            font-size: 2.5rem;
+          }
+          p {
+            font-size: 1.7rem;
+          }
+
+          div {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .screens {
+        margin-top: 2rem;
+        display: flex;
+        overflow-x: scroll;
+
+        img {
+          width: 50%;
+
+          padding: 1rem;
+        }
+      }
+
+      .rev {
+        margin-top: 3rem;
+        padding: 1rem;
+        .review {
+          margin: 0rem;
+          margin-top: 2rem;
+          display: flex;
+          .centerRev {
+            display: flex;
+            justify-content: space-around;
+            h3 {
+              font-size: 2rem;
+            }
+          }
+          img {
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+            font-size: 1.3rem;
+            h1 {
+              font-size: 2rem;
+            }
+            h2 {
+              font-size: 1.3rem;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

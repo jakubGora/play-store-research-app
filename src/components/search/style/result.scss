@@ -38,3 +38,22 @@
     cursor: pointer;
   }
 }
+@media only screen and (max-width: 600px) {
+  .SearchResult {
+    .content {
+      .info {
+        padding: 0.5rem;
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    button {
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}

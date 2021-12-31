@@ -63,4 +63,20 @@
   background-color: #87d146;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .SearchResult .content .info {
+    padding: 0.5rem;
+  }
+  .SearchResult .content .info h1 {
+    font-size: 1.5rem;
+  }
+  .SearchResult .content .info p {
+    font-size: 1.2rem;
+  }
+  .SearchResult button {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=result.css.map */
