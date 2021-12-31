@@ -60,11 +60,13 @@
   .Search {
     .search-input {
       input {
-        width: 60vw;
+        width: 70vw;
         height: 100%;
+        font-size: 1.5rem;
       }
       button {
         min-width: 43px;
+        font-size: 1.5rem;
       }
     }
   }

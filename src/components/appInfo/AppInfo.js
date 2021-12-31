@@ -11,6 +11,10 @@ const moreLess = (e, app, more, setMore) => {
   }
 };
 
+const openSite = (link) => {
+  window.open(link, "_blank");
+};
+
 function AppInfo({ setApp, app }) {
   const [revs, setRevs] = useState();
   const [more, setMore] = useState(false);
@@ -68,7 +72,7 @@ function AppInfo({ setApp, app }) {
           >
             <img src="https://image.flaticon.com/icons/png/512/992/992660.png" />
           </button>
-          <button className="buy">
+          <button onClick={() => openSite(app.url)} className="buy">
             {app.price.display != "Free"
               ? "Kup za " + app.price.display
               : "Zainstaluj"}

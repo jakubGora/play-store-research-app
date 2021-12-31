@@ -232,8 +232,7 @@
         overflow-x: scroll;
 
         img {
-          width: 50%;
-
+          max-height: 30vh;
           padding: 1rem;
         }
       }

@@ -306,7 +306,7 @@
     overflow-x: scroll;
   }
   .appInfo .content .screens img {
-    width: 50%;
+    max-height: 30vh;
     padding: 1rem;
   }
   .appInfo .content .rev {
