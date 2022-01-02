@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SearchList from "./SearchList";
-
+import logo from "../../logo.png";
 import "./style/search.css";
 import AppInfo from "../appInfo/AppInfo";
 const load = (e, a, b, c) => {
@@ -39,6 +39,7 @@ function Search({ setApp, rec, setRec }) {
   return (
     <div className="Search">
       <div className="search-input">
+        <img src={logo} alt="logo" />
         <form onSubmit={(e) => load(e, setRec, name, setLoading)}>
           {rec ? (
             <div
@@ -52,7 +53,7 @@ function Search({ setApp, rec, setRec }) {
             ""
           )}
           <input
-            className={rec ? "home" : ""}
+            className={!rec ? "home" : ""}
             type="text"
             name="name"
             onChange={(e) => setName(e.target.value)}
