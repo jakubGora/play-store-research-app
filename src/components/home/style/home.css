@@ -1,0 +1,61 @@
+.Home .nav {
+  overflow-x: scroll;
+  border-bottom: 2px solid #bebebe;
+}
+
+.Home .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.Home .nav ul li {
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 10rem;
+  height: 5rem;
+}
+
+.Home .nav ul li .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  border-bottom: green;
+}
+
+.Home .nav ul li .clicked {
+  font-size: 1.6rem;
+  color: green;
+  border-bottom: 5px solid green;
+}
+
+.Home ::-webkit-scrollbar {
+  height: 0px;
+}
+/*# sourceMappingURL=home.css.map */

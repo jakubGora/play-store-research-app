@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import "./style/result.css";
+import "./result.css";
+import star from "../../../img/star.png";
 function SearchResult({ element, setApp }) {
   return (
-    <div className="SearchResult">
+    <div onClick={() => setApp(element)} className="SearchResult">
       <div className="content">
         <img
-          width="100px"
-          height="100px"
+          width="60px"
+          height="60px"
           src={
             element.icons
               ? element.icons?.small
@@ -16,15 +17,15 @@ function SearchResult({ element, setApp }) {
         />
         <div className="info">
           <h1>{element.name}</h1>
-          <p>{element.developer?.name}</p>
           <p>
-            {element.score > 0
-              ? "Ocena: " + element.rating?.average.toFixed(2) + "/5"
-              : ""}
+            {element.developer?.name} • {element.category}{" "}
+          </p>
+          <p>
+            {element.ratings ? element.ratings.average : ""}
+            <img src={star} alt="star" />
           </p>
         </div>
       </div>
-      <button onClick={() => setApp(element)}>Szczegóły</button>
     </div>
   );
 }

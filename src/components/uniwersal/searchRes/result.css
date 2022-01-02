@@ -8,11 +8,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10rem;
-  border-radius: 5rem;
-  margin-bottom: 2rem;
-  -webkit-box-shadow: 0px 5px 10px gray;
-          box-shadow: 0px 5px 10px gray;
+  margin-bottom: 2.5rem;
 }
 
 .SearchResult .content {
@@ -25,12 +21,24 @@
           flex-direction: row;
 }
 
+.SearchResult .content h4 {
+  width: 3rem;
+  font-size: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 100;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 .SearchResult .content img {
   border-radius: 1rem;
   height: 100%;
 }
 
 .SearchResult .content .info {
+  padding-left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,45 +46,35 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.SearchResult .content .info h1 {
+  font-weight: 500;
 }
 
 .SearchResult .content .info p {
   font-size: 1.8rem;
 }
 
-.SearchResult button {
-  border-end-end-radius: 1rem;
-  border-top-right-radius: 1rem;
-  border: none;
-  height: 100%;
-  padding: 2rem;
-  font-size: 2rem;
-  background-color: #689f38;
-  color: #f1f1f1;
-}
-
-.SearchResult button:hover {
-  background-color: #87d146;
-  cursor: pointer;
+.SearchResult .content .info p img {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.2rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .SearchResult .content .info {
-    padding: 0.5rem;
+  .SearchResult {
+    margin-left: 2rem;
   }
   .SearchResult .content .info h1 {
-    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
   }
   .SearchResult .content .info p {
-    font-size: 1.2rem;
-  }
-  .SearchResult button {
-    padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    padding-left: 1rem;
   }
 }
 /*# sourceMappingURL=result.css.map */

@@ -1,6 +1,5 @@
 .appInfo {
   position: fixed;
-  width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,6 +246,9 @@
   .appInfo {
     position: fixed;
   }
+  .appInfo .line {
+    margin-top: 1rem;
+  }
   .appInfo .content {
     border-radius: 0rem;
     max-width: 100vw;
@@ -258,16 +260,16 @@
   }
   .appInfo .content .buttons button.x {
     border: none;
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
   }
   .appInfo .content .buttons button.x img {
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
   }
   .appInfo .content .buttons button.buy {
     font-size: 1.2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     border-radius: 1rem;
     padding: 1.3rem;
   }

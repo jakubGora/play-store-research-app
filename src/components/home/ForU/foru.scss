@@ -1,0 +1,16 @@
+.ForU {
+  width: 100vw;
+  display: flex;
+
+  display: flex;
+  flex-direction: column;
+  .group {
+    padding: 2rem;
+    width: 100vw;
+    .games-list {
+      overflow-x: scroll;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
