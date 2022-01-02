@@ -1,3 +1,8 @@
+.Home {
+  width: 100vw;
+  max-width: 800px;
+}
+
 .Home .nav {
   overflow-x: scroll;
   border-bottom: 2px solid #bebebe;
@@ -7,7 +12,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style-type: none;
+  margin-top: 1rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -57,5 +66,13 @@
 
 .Home ::-webkit-scrollbar {
   height: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Home .nav ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=home.css.map */

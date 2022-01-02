@@ -13,6 +13,7 @@
 .ForU .group {
   padding: 2rem;
   width: 100vw;
+  max-width: 800px;
 }
 
 .ForU .group .games-list {

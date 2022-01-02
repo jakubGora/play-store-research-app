@@ -5,8 +5,15 @@
   background-color: #eeeeee;
 }
 html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 62.5%;
   font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.App {
+  max-width: 800px;
 }
 
 ::-webkit-scrollbar {

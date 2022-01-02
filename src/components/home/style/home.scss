@@ -1,10 +1,15 @@
 .Home {
+  width: 100vw;
+  max-width: 800px;
+
   .nav {
     overflow-x: scroll;
     border-bottom: 2px solid rgb(190, 190, 190);
     ul {
       display: flex;
+      justify-content: center;
       list-style-type: none;
+      margin-top: 1rem;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       li {
@@ -40,5 +45,14 @@
   }
   ::-webkit-scrollbar {
     height: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Home {
+    .nav {
+      ul {
+        justify-content: flex-start;
+      }
+    }
   }
 }
